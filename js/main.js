@@ -7,19 +7,19 @@
     // silly example
     document.querySelector("nav ul li a").setAttribute("href", "https://www.google.co.uk");
 
-    document.getElementById('myTestEvent').addEventListener('click', myFunction(ev)); 
+    document.getElementById('myTestEvent').addEventListener('click', myFunction()); 
 
-    document.querySelector(".red colPicker").addEventListener('click', function(ev){
-        document.queryselector('body').setAttribute("class","redBack");
+    document.querySelector(".red").addEventListener('click', function(ev){
+        document.querySelector('body').setAttribute("class","redBack");
     });
-    document.querySelector(".blue colPicker").addEventListener('click', function(ev){
-        document.queryselector('body').setAttribute("class","blueBack");
+    document.querySelector(".blue").addEventListener('click', function(ev){
+        document.querySelector('body').setAttribute("class","blueBack");
     });
-    document.querySelector(".green colPicker").addEventListener('click', function(ev){
-        document.queryselector('body').setAttribute("class","greenBack");
+    document.querySelector(".green").addEventListener('click', function(ev){
+        document.querySelector('body').setAttribute("class","greenBack");
     });
-    document.querySelector(".reset colPicker").addEventListener('click', function(ev){
-        document.queryselector('body').removeAttribute("class","redBack");
+    document.querySelector(".reset").addEventListener('click', function(ev){
+        document.querySelector('body').removeAttribute("class","redBack");
     });
     
 
@@ -29,7 +29,7 @@
     //code ends here
 })();
 
-function myFunction(ev){
-    console.dir(ev);
+function myFunction(){
+    console.info("hi");
 }
 
