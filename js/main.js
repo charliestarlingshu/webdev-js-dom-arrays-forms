@@ -9,17 +9,17 @@
 
     document.getElementById('myTestEvent').addEventListener('click', myFunction(ev)); 
 
-    document.querySelector(".red").addEventListener('click', function(ev){
+    document.querySelector(".red colPicker").addEventListener('click', function(ev){
         document.queryselector('body').setAttribute("class","redBack");
     });
-    document.querySelector(".blue").addEventListener('click', function(ev){
+    document.querySelector(".blue colPicker").addEventListener('click', function(ev){
         document.queryselector('body').setAttribute("class","blueBack");
     });
-    document.querySelector(".green").addEventListener('click', function(ev){
+    document.querySelector(".green colPicker").addEventListener('click', function(ev){
         document.queryselector('body').setAttribute("class","greenBack");
     });
-    document.querySelector(".rest").addEventListener('click', function(ev){
-        document.queryselector('body').setAttribute("class","redBack");
+    document.querySelector(".reset colPicker").addEventListener('click', function(ev){
+        document.queryselector('body').removeAttribute("class","redBack");
     });
     
 
